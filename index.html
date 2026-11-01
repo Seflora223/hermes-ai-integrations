@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about private, self-hosted Hermes integrations with Google services.">
+  <title>Hermes AI Integrations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Private, self-hosted integrations</p>
+      <h1>Hermes AI Integrations</h1>
+      <p class="lead">Hermes AI Integrations connects self-hosted Hermes AI agents to Google services that the operator has configured and each Google account has separately authorized through Google OAuth.</p>
+    </header>
+
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">Purpose</h2>
+      <p>Depending on the integration and permissions currently enabled, an authorized agent can help its user work with Gmail, Google Calendar, Google Drive, Google Contacts, Google Sheets, and Google Docs. Supported tasks can include finding and reading relevant information, preparing summaries or drafts, and carrying out user-directed actions.</p>
+      <p>Listing a service here does not mean that every deployment, OAuth project, agent, or Google account can access it. Access requires an implemented integration, an OAuth client configured by the operator, and authorization by the applicable Google account. Google Workspace administrators may impose additional restrictions.</p>
+    </section>
+
+    <section aria-labelledby="operation">
+      <h2 id="operation">How it operates</h2>
+      <ul>
+        <li>The Hermes agent runs on infrastructure controlled by the operator.</li>
+        <li>OAuth client credentials and account-specific tokens are stored on that self-hosted infrastructure.</li>
+        <li>The integration is designed to retrieve only data relevant to a user-requested task.</li>
+        <li>Depending on the deployment, AI processing may use externally hosted model providers, locally hosted models, or both. When an external model is used, task-relevant instructions and Google data may be transmitted to that provider for inference.</li>
+        <li>Google access can be revoked at any time from the Google Account connections page or by removing the local integration.</li>
+      </ul>
+      <p>In the current deployment, operating rules require explicit user approval before external email is sent or an authoritative document is changed. These are operational safeguards, not restrictions imposed by the granted Google OAuth scopes.</p>
+    </section>
+
+    <section aria-labelledby="availability">
+      <h2 id="availability">Availability</h2>
+      <p>This is a private integration environment. It does not offer public registration or a public hosted AI service. Additional Google accounts, OAuth clients, or Google Cloud projects may be connected in the future only after they are separately configured and authorized.</p>
+    </section>
+
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Privacy and contact</h2>
+      <p>Read the <a href="privacy.html">Privacy Policy</a> for details about Google data access, local storage, AI-provider processing, retention, deletion, and revocation.</p>
+      <p>Operator: <strong>SEFLORA, privatdriven AI-integration</strong><br>
+      Privacy and support contact: <a href="mailto:seflora223@gmail.com">seflora223@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>Hermes AI Integrations is an operator-managed deployment. Google product names are used only to identify compatible services; this site does not claim affiliation with or endorsement by Google.</p>
+      <p>Last updated: 1 November 2026</p>
+    </footer>
+  </main>
+</body>
+</html>

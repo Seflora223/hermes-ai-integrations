@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Hermes AI Integrations.">
+  <title>Privacy Policy — Hermes AI Integrations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <nav aria-label="Primary"><a href="index.html">← Hermes AI Integrations</a></nav>
+    <header>
+      <p class="eyebrow">Hermes AI Integrations</p>
+      <h1>Privacy Policy</h1>
+      <p>Effective and last updated: 1 November 2026</p>
+    </header>
+
+
+    <section>
+      <h2>1. Operator and scope</h2>
+      <p>Hermes AI Integrations is operated by <strong>SEFLORA, privatdriven AI-integration</strong>. Privacy questions and deletion requests may be sent to <a href="mailto:seflora223@gmail.com">seflora223@gmail.com</a>.</p>
+      <p>This policy describes how an operator-managed, self-hosted Hermes AI environment accesses, uses, stores, shares, retains, and deletes Google user data when a Google account authorizes a configured integration through Google OAuth.</p>
+      <p>Available integrations depend on the deployment, OAuth project, permissions requested, Google account authorization, and applicable administrator policy. Mentioning a service does not mean that every deployment, project, agent, or account has access to it.</p>
+    </section>
+
+    <section>
+      <h2>2. Google data that may be accessed</h2>
+      <p>The current integration requests the permissions displayed during Google OAuth. Depending on implemented features and the user’s request, these permissions can allow access to:</p>
+      <table>
+        <thead><tr><th>Service</th><th>Data and possible operations</th></tr></thead>
+        <tbody>
+          <tr><td>Gmail</td><td>Message and thread metadata and content; search and read messages; send email; reply; and modify message labels.</td></tr>
+          <tr><td>Google Calendar</td><td>Calendar and event metadata and content; list, create, update, or delete events.</td></tr>
+          <tr><td>Google Drive</td><td>File and folder metadata, content, and permissions; search, read, upload, download, organize, share, trash, or delete files.</td></tr>
+          <tr><td>Google Contacts</td><td>Names, email addresses, phone numbers, organizations, and other fields available under read-only Contacts permission.</td></tr>
+          <tr><td>Google Sheets</td><td>Spreadsheet metadata, sheet names, ranges, cell values, and formulas; read, create, update, or append spreadsheet data.</td></tr>
+          <tr><td>Google Docs</td><td>Document metadata, titles, tabs, and text; read, create, append, or edit documents.</td></tr>
+          <tr><td>OAuth information</td><td>Granted permissions, access token, refresh token, and token-expiration data used to authenticate and maintain authorized access.</td></tr>
+        </tbody>
+      </table>
+      <p>The integration should retrieve only data relevant to the user’s request. It does not bulk-copy or index an entire Google account unless the user explicitly authorizes a separately disclosed workflow.</p>
+    </section>
+
+    <section>
+      <h2>3. How Google data is used</h2>
+      <p>Google data is used to provide user-facing agent functions initiated or configured by the user, such as locating relevant information, answering a question, preparing a summary or draft, or carrying out a user-directed action through a Google API.</p>
+      <p>Google data is not used by the operator for advertising, retargeting, creditworthiness, lending, sale to data brokers, or unrelated secondary purposes. The operator does not use Google data to train or improve a general-purpose AI model.</p>
+    </section>
+
+    <section>
+      <h2>4. AI model processing</h2>
+      <p>A deployment may use externally hosted AI model providers, locally hosted models, or a combination of both. The current deployment uses an externally hosted OpenAI Codex model. When necessary to complete a user-requested task, task-relevant Google data and the user’s instructions may therefore be transmitted to OpenAI for inference. A locally hosted model processes its assigned data on operator-controlled infrastructure unless its documented configuration states otherwise.</p>
+      <p>Google data is transmitted to an external model provider only as needed to provide a user-facing feature. The operator does not intentionally submit Google data to an AI provider for advertising, unrelated secondary purposes, or general-purpose model training, and users must not submit provider feedback containing Google data. The provider’s handling of submitted content is governed by the applicable service terms, account settings, and privacy information. See <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a> and <a href="https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt">OpenAI data controls</a>.</p>
+      <p>If a deployment changes model provider or data-handling configuration, this disclosure must be reviewed before Google data is sent under materially different practices.</p>
+    </section>
+
+    <section>
+      <h2>5. Storage and security</h2>
+      <p>OAuth client credentials and account-specific access and refresh tokens are stored on the self-hosted Hermes system. In the current deployment, credential files are restricted to the operating-system account that runs Hermes. Tokens are not placed in the public website or public source repository.</p>
+      <p>Google data used for a task may appear in local Hermes conversation history, tool results, temporary working files, user-requested downloads, generated outputs, operational logs, and operator-controlled backups. The system may therefore store data locally even when it was retrieved only for a single task.</p>
+      <p>Reasonable technical and organizational safeguards are used, but no system can guarantee absolute security.</p>
+    </section>
+
+    <section>
+      <h2>6. Sharing and human access</h2>
+      <p>Google data is not sold. It may be transferred to the configured AI model provider only as needed to provide a user-facing feature, or disclosed where required for security, abuse prevention, legal compliance, or another purpose permitted by the Google API Services User Data Policy.</p>
+      <p>The operator does not access Google user data except when the user requests or agrees to the processing, when access is necessary to operate or secure the user’s self-hosted environment, or when required by law. The user’s own access to their data through the agent is not treated as third-party human access.</p>
+    </section>
+
+    <section>
+      <h2>7. Google API Services User Data Policy</h2>
+      <p>Hermes AI Integrations’ use and transfer to any other application of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+
+    <section>
+      <h2>8. Retention and deletion</h2>
+      <ul>
+        <li>OAuth tokens are retained locally until access is revoked, the integration is removed, or the local credential is deleted.</li>
+        <li>Google content included in Hermes conversation history or generated output remains until the operator or user deletes the corresponding local session or file.</li>
+        <li>Temporary task files are deleted when no longer needed for the task or during normal local cleanup.</li>
+        <li>Operational logs and operator-controlled backups may retain copies until their normal rotation or deletion.</li>
+        <li>Data transmitted to an AI provider is retained according to the provider terms and account settings applicable at the time of processing.</li>
+      </ul>
+      <p>Deletion requests may be sent to <a href="mailto:seflora223@gmail.com">seflora223@gmail.com</a>. A request should identify the relevant deployment, account, session, or local file. Deleting local data does not delete content that the user intentionally wrote back to a Google service; that content can be managed in the applicable Google service.</p>
+    </section>
+
+    <section>
+      <h2>9. Revoking Google access</h2>
+      <p>A user can revoke access from <a href="https://myaccount.google.com/connections">Google Account connections</a> or ask the deployment operator to remove the local integration. Revocation prevents future API access after it takes effect, but does not by itself delete data already present in local histories, files, logs, backups, generated outputs, or an authorized processor’s records.</p>
+    </section>
+
+    <section>
+      <h2>10. Account and project separation</h2>
+      <p>Each Google account must authorize access separately. Authorization by one account does not authorize another account, agent profile, OAuth client, or Google Cloud project. This website may describe more than one compatible integration, but a future account or project is not active merely because it is mentioned here.</p>
+    </section>
+
+    <section>
+      <h2>11. Changes and contact</h2>
+      <p>This policy may be updated when integrations or data practices change. The effective date will be revised. Where required, users will be informed and asked to authorize materially new access or use before it begins.</p>
+      <p>Operator: <strong>SEFLORA, privatdriven AI-integration</strong><br>
+      Privacy and support contact: <a href="mailto:seflora223@gmail.com">seflora223@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">Home</a></p>
+    </footer>
+  </main>
+</body>
+</html>
